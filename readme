@@ -1,4 +1,9 @@
 Drug release investigated by Monte Carlo simulations
+
+authors: Márcio Sampaio Gomes Filho
+         Fernando Albuquerque Oliveira
+         Marco Aurélio A. Barbosa
+
 -> Two dimension lattice model 
 -> code: drugrelease.c
 -> Some of the results produced by the code were published in the reference:
