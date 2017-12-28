@@ -1,10 +1,51 @@
 Drug release investigated by Monte Carlo simulations
 -> Two dimension lattice model 
--> code drugrelease.c
--> Some results was published  in reference:
+-> code: drugrelease.c
+-> Some of the results produced by the code were published in the reference:
    GOMES FILHO, M. S., OLIVEIRA, F. A., BARBOSA, M. A. A. A statistical mechanical model for drug release: Inves-
 tigations on size and porosity dependence, Physica A: Statistical Mechanics and its Applications, v. 460, p. 29-37, 2016.
 ISSN: 0378-4371.
+
+
+1) For compile the code and set the parameters (run in terminal): 
+
+./run.sh  
+
+This generating a  example:
+L   = 10    (size of sistem - square lattice)
+p   = 15    (Number of porous -> lambda = p/4L)
+N_0 = 100   (Initial number of particles - N_0 = L x L)
+s   = 1000  (Number of simulations - mean and standart desviation)
+t   = 1000  (Monte Carlo step)
+i   = 2     (step to print)
+f   = 0.99  (stop the simulation when the 99% of release )
+
+2) OUTPUT:
+
+# tempo de simulação: 0.660571 (segundos)  = 0.000183 (horas) ---> Parâmetros de entrada:  -lx: 10, -ly: 10, -p: 15, -t: 10000.000, -s: 1000, -i: 2, -f: 0.999900
+ 0 	 100
+2 	 93.829000 	 2.041509
+4 	 89.029000 	 2.401283
+6 	 84.776000 	 2.667550
+8 	 80.987000 	 2.889434
+10 	 77.651000 	 3.096320
+12 	 74.305000 	 3.234807
+14 	 71.297000 	 3.305872
+16 	 68.454000 	 3.498555
+18 	 65.718000 	 3.743324
+20 	 63.180000 	 3.910192
+.
+.
+.
+368 	 0.020000 	 0.198997
+370 	 0.018000 	 0.188881
+372 	 0.018000 	 0.188881
+374 	 0.014000 	 0.166745
+376 	 0.014000 	 0.166745
+378 	 0.012000 	 0.154454
+
+
+
 
 
 
